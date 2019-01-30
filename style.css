@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+    color: white;
+  }
+  
+  /****Header****/
+  
+  header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.1)
+  }
+  
+  .nav-link {
+    display: inline-block;
+    margin-right: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .nav-link:hover {
+    text-shadow: 2px 2px 5px white;
+  }
+  
+  .fa.fa-code{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: green;
+  }
+  
+  /****Page Principale****/
+  
+  #presentation {
+    height: 80vh;
+    padding-top: 20vh;
+    background-image: linear-gradient(#1A1C21, #293133);
+  }
+  
+  #titre-principale {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: 0.7em;
+    background-color: #1A1A1A;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px black;
+  }
+  
+  #topbar {
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(#CDCDCD, #969696);
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  #circles {
+    text-align: left;
+    padding-top: 3px;
+    margin-left: 5px
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  #red {
+    background-color: #F2605D;
+  }
+  
+  #red:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+  
+  #yellow {
+    background-color: #F2C231;
+  }
+  
+  #yellow:hover {
+    background-color: #e6e600;
+    cursor: pointer;
+  }
+  
+  #green {
+    background-color: #35D041;
+  }
+  
+  #green:hover {
+    background-color: #00e600;
+    cursor: pointer;
+  }
+  
+  #titre-principale h1 {
+    margin-top: 50px
+  }
+  
+  #titre-principale h2 {
+    margin-top: 30px;
+  }
+  
+  #nom {
+    color: green;
+  }
+  
+  @keyframes blink {
+    0% {}
+    50% {color: #1A1A1A}
+  }
+  
+  #clignotte {
+    animation: blink 1s infinite;
+  }
+  
+  #texte-presentation {
+    padding-top: 140px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #texte{
+    width: 500px;
+    line-height: 25px;
+  }
+  
+  #dl-cv {
+    margin-right: 50px;
+  }
+  
+  #dl-cv p {
+    margin-bottom: 30px
+  }
+  .link-cv {
+    color: #DBD5CD;
+    font-size: 5em;
+    margin-left: 40px;
+  }
+  
+  .link-cv:hover {
+    color: #FBF5E2;
+  }
+  
+  .fas.fa-file-pdf {
+    margin-right: 20px;
+  }
+  
+  /****PROJETS****/
+  
+  #mes_projets {
+    background-image: linear-gradient(#293133, gray);
+      padding-top: 60px;
+  }
+  
+  #grid-projects {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    margin-top: 100px; 
+  }
+  
+  .fab.fa-html5 {
+    color: #E66828;  
+  }
+  
+  .fab.fa-css3-alt {
+    color: #5A90CD;
+  }
+  .lang-icon{
+    font-size: 1.5em;
+  }
+  .date-icon {
+    display: flex;
+    justify-content: center;
+  }
+  .date {
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+  
+  .project {
+    margin: auto;
+    width: 280px;
+    margin-bottom: 150px;
+    opacity: 0.5;
+    box-shadow: 10px 10px 10px black;
+  }
+  
+  .project:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 100px white;
+  }
+  
+  .project-desc {
+    background-image: linear-gradient(black, gray);
+  }
+  
+  /****Contact****/
+  #contact {
+    background-image: linear-gradient(gray, lightgray);
+    height: 800px;
+  }
+  
+  #contact p {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-size: 2.5em;
+  }
+  
+  .contact-link {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: solid 4px black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: green;
+    margin: 0px 100px 0px 100px;
+    font-size: 1.4em;
+  }
+  
+  .contact-link:hover{
+    background-color: white;
+    box-shadow: 0px 5px 20px black;
+  }
+  
+  /****Responsive****/
+  
+  @media screen and (max-width: 1024px) {
+    #grid-projects {
+      height: 100%;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 33% 33% 33%;
+    }
+      #texte-presentation {
+      flex-direction: column;
+      padding-top: 80px;
+    }
+    
+    #texte {
+      width: 90%;
+      margin: auto; 
+    }
+    
+    #dl-cv {
+      padding-top: 60px;
+    }
+    
+    .contact-link {
+      margin: 0px 50px 0px 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #titre-principale {
+      width: 80%
+    }
+    
+    .contact-link {
+      margin: 0px 30px 0px 30px;
+    }
+  }
